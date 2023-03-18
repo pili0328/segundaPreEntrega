@@ -6,7 +6,9 @@ propiedad de valor;
 
 /*imports*/
 
-@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
 
 /*selector universal*/
 *{
@@ -19,10 +21,10 @@ propiedad de valor;
 
 /*body del index*/
 .bodyPrincipal{
-    background-color:rgb(217, 253, 172);
+    background-color:rgb(153, 239, 163);
 }
 
-/*imagen de fondo header Index*/
+/*imagen de fondo de los header*/
 .imagenInicio{
     background-image: url(../assets/img/headerInicio.png);
     background-size: cover;
@@ -47,7 +49,7 @@ propiedad de valor;
     
 }
 
-/*resalta los links del index*/
+/*resalta los links de las paginas*/
 .linkNav{
     text-decoration: none;
     float: left;
@@ -55,25 +57,62 @@ propiedad de valor;
     line-height: 2rem;
     margin: 0.5rem;
     padding: 0.5rem;
-
+}
+.colorLink{
+    color: rgb(94, 164, 97);
 }
 
 /*section del index*/ 
 .sectionIndex{
-    background-color: rgb(217, 253, 172);
+    background-color: rgb(153, 239, 163);
 
 }
+
+.col-img{
+    background-position: center;
+    background-size: cover;
+    background-image: url(../assets/img/vacasdelcampo.png);
+    margin-bottom: 50px;
+    background-repeat: no-repeat;
+    display: flex;
+    width: 30%;
+     height: 200px;
+    object-fit: cover;  
+}
+/*intente de todo y las imagenes no se adaptan a la altura y acnho que quiero y el link de activismo no se acomoda  abajo*/
+.col-imgdos{
+    background-position: center;
+    background-size: auto;
+    background-image: url(../assets/img/huevos.png);
+    margin-bottom: 50px;
+    background-repeat: no-repeat;
+    display: flex; 
+    width: 30%;
+     height: 200px;
+    object-fit: cover; 
+}
+
+.col-imgtres{
+    background-position: center;
+    background-size: auto;
+    background-image: url(../assets/img/protestas.png);
+    margin-bottom: 50px;
+    background-repeat: no-repeat;
+    display: flex;
+    width: 30%;
+     height: 200px;
+    object-fit: cover; 
+}
+
 
 .parrafoSectionIndex{
     font-size: 1.2rem;
 }
 
 .tituloPrincipal{
-    background-color: rgb(217, 253, 172);
+    background-color:rgb(153, 239, 163);
     width: 100%;
-    height: 25vh;
     font-size: 2.2rem;
-    justify-content: left;
 }
 
 /*parrafo del titulo principal*/
@@ -81,15 +120,75 @@ propiedad de valor;
     font-size: 1.2rem;
 }
 
+/*pagina como ayudar*/
+.tituloAyuda{
+ display: flex;
+ margin-top: 3%;
+ justify-content: center;
+ color: aliceblue;
+}
+.sectionGaleriaImg{
+    background-repeat: no-repeat;
+     margin: 5%;
+    display: flex;
+    object-fit: cover;  
+}
+.imgAcomodar{
+    display: inline-block;
+    padding: 0%;
+    width: 41vh;
+}
+.imgAjustando{
+    width: 100% ;
+    height: 300px;
+    display: flex;
+    object-fit: cover;
+}
+.iconoImg{
+    padding-left: 50px;
+}
+.video{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 25px;
+}
+
 /*footer*/
+
 .pieDePagina{
-    background-color: rgb(47, 131, 56);
+    background-color: rgb(113, 183, 120);
+    height: 20vh;
+}
+.parrafoFoot{
+    display: flex;
+    justify-content: center;
+}
+.contenedorRedes{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.contenedorRedes a{
+    color: rgb(34, 105, 52);
+    font-size: 2.5rem;
+    text-decoration: none;
 }
 
 /*tipo de font*/
 .textoNegrita{
+    color: rgb(66, 198, 73);
     text-decoration: none;
     font-weight: bold;
-    border: 2px dashed #ffffff;
+    
+}
+
+@media screen and (min-width:0px) and (max-width:768px) {
+    .linkNav{
+        text-decoration: none;
+        display: flex;
+        font-size: 2.5vh;
+        line-height: 30px;
+    }
+
     
 }

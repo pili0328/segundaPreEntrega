@@ -7,38 +7,42 @@
     <title>alimentacion</title>
      <!--favicon-->
      <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
+      <!--boostrap-->
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
         <!--estilos-->
         <link rel="stylesheet" href="../css/estilos.css">
+         <!--el script me ayudo a que me funcione los iconos de redes porque lo descargue y no me funciono-->
+         <script src="https://kit.fontawesome.com/acaf011dda.js" crossorigin="anonymous"></script>
 </head>
-<body>
+<body class="bodyPrincipal">
     <header class="imagenInicio">
         <div>
-            <img src="../assets/img/plantita logo.png" alt="logo de plantita de vegano" width="80px">
+            <img src="../assets/img/plantita logo.png"  alt="logo de plantita de vegano" class="logo">
         </div>
         <nav>
             <!--esto es una lista desordenada-->
-            <ul>
+            <ul class="listaDeNavegacion">
                 <li>
-                    <a href="../index.html">inicio</a>
+                    <a class="linkNav colorLink" href="../index.html">inicio</a>
                 </li>
                 <li>
-                    <a href="./como ayudar.html">como ayudar?</a>
+                    <a class="linkNav colorLink" href="./como ayudar.html">como ayudar?</a>
                 </li>
                 <li>
-                    <a href="#">alimentacion</a>
+                    <a class="linkNav colorLink" href="#">alimentacion</a>
                 </li>
                 <li>
-                    <a href="./vegetarianismo.html">vegetarianismo</a>
+                    <a class="linkNav colorLink" href="./vegetarianismo.html">vegetarianismo</a>
                 </li>
                 <li>
-                    <a href="./nosotros.html">nosotros</a>
+                    <a class="linkNav colorLink" href="./nosotros.html">nosotros</a>
                 </li>
             </ul>
         </nav>
     </header>
     <main>
         <section>
-            <h1>Vivimos a base de lechuga?</h1>
+            <h1 class="tituloAyuda">Vivimos a base de lechuga?</h1>
             <p>Que se va a enfermar, que se le van a bajar las defensas, que le va a dar anemia si deja de comer carne, porque la carne no solo es sabrosa sino necesaria para el organismo. Que la leche fortalece los huesos, que el huevo y el queso son imprescindibles en cualquier dieta saludable. Que cómo le va a hacer el feo a un pollito asado, a un churrasco, a una morcilla, a una chuleta de cerdo. Que cuál es el pecado en comerse un pez o un marisco. Que el veganismo parece una secta, cuando no una moda. Que el ser humano es omnívoro por naturaleza.
                 Un vegano puede ser objeto de preocupación, mitos, burlas e incomprensión de amigos y familiares carnívoros que en algún momento han tratado o tratarán de hacerlo entrar en razón sobre su mala decisión de no consumir productos de origen animal.</p>
         </section>
@@ -49,7 +53,7 @@
         </section>
         <section>
             <div>
-                <img src="../assets/img/snack zapallo.jpg" alt="snack de semillas de zapallo" width="500px">
+                <img src="../assets/img/snack zapallo.png" alt="snack de semillas de zapallo" width="500px">
             </div>
             <ol>
                 <li>Colocar las semillas en el sarten a fuego medio/bajo hasta que se doren</li>
@@ -59,7 +63,7 @@
         </section>
         <section>
             <div>
-                <img src="../assets/img/rapiditas integrales.jpg" alt="rapitas integrales veganas" width="500px">
+                <img src="../assets/img/rapiditas integrales.png" alt="rapitas integrales veganas" width="500px">
             </div>
             <h3>Ingredientes</h3>
                 <ol>
@@ -78,7 +82,7 @@
         </section>
         <section>
             <div>
-                <img src="../assets/img/pancake de avena.jpg.crdownload" alt="Pancake de avena" width="500px">
+                <img src="../assets/img/pancake de avena.png" alt="Pancake de avena" width="500px">
             </div>
             <h3>Ingredientes</h3>
                 <ol>
@@ -124,12 +128,17 @@
             <p>Ibai es vegano, abogado y activista por los derechos de los animales. Tiene una de las cuentas en Instagram de mayor influencia sobre el tema y es unos de los jóvenes referentes del veganismo en España.</p>
         </section>
     </main>
-    <footer>
-        <p>todos los derechos reservados 2023</p>
-        <p>instagram</p>
-        <p> twitter</p>
-        <p>facebook</p>
+    <footer class="pieDePagina">
+        <p class="parrafoFoot">todos los derechos reservados 2023</p>
+        <div class="contenedorRedes">
+            <!--puse mis redes sociales para que cumpla la funcion, es una pagina imaginativa y no sabia que poner-->
+                <a href="https://www.instagram.com/piliaayala/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://www.facebook.com/romina.ayala.7758" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                <a href="https://twitter.com/piliaayala03" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+            </div>
     </footer>
+    <!--siempre abajo del footer-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
     
 </body>
 </html>
