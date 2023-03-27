@@ -33,7 +33,7 @@ propiedad de valor;
     padding-left: 5%;
     top: 0px;
     z-index: 5;
-    width: 100%;
+
     height: 32vh;
     
 }
@@ -156,6 +156,40 @@ propiedad de valor;
     margin-bottom: 25px;
 }
 
+/*Pagina vegetarianismo*/
+.h2Titulo{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    margin: 10px;
+}
+/* .carousel{
+    display: flex;
+    justify-content: center;
+    width: 80%;
+    height: 30%;
+    object-fit: cover;
+
+}*/
+
+.cardTitulo{
+    display: flex;
+     margin-top: 3%;
+     justify-content: center;
+     color: rgb(50, 85, 51);
+}
+.cardSub{
+    display: flex;
+    margin-bottom: 3%;
+    justify-content: center;
+    color:rgb(255, 255, 255)
+}
+.cardAcomodo{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
 /*footer*/
 
 .pieDePagina{
@@ -187,7 +221,6 @@ propiedad de valor;
 
 @media screen and (min-width:0px) and (max-width:768px) {
     .bodyPrincipal{
-        width: auto;
         background-color:rgb(153, 239, 163);
     }
     .imagenInicio{
@@ -201,7 +234,6 @@ propiedad de valor;
         padding-left: 5%;
         top: 0px;
         z-index: 5;
-        width: 90vh;
         height: 22vh;}
 
     .linkNav{
@@ -241,14 +273,34 @@ propiedad de valor;
     }
 
     /*Seccion Como Ayudar*/
-   
+    .sectionGaleriaImg{
+        background-repeat: no-repeat;
+        margin: 5%;
+        display: flex;
+        object-fit: cover; 
+        align-items: center;
+    }
+    
+    .imgAcomodar{
+        display: inline-block;
+        padding: 0%;
+ 
+    }
+    
+    .imgAjustando{
+        width:  40vh;
+        height: 70%;
+        display: flex;
+        object-fit: cover;
+
+
+    }
 
 
     /*footer*/
     .pieDePagina{
         background-color: rgb(113, 183, 120);
-        width: 90vh;
-        height: 10vh;
+        height: 12vh;
 
     }
     
