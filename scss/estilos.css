@@ -1,0 +1,416 @@
+/*selector de etiqueta.
+nombre de etiqueta html{
+propiedad de valor;
+propiedad de valor;
+}*/
+/*imports*/
+/*creacion de variables*/
+/*mapa, lo use en el video de la pagina Como Ayudar!*/
+/*selector universal*/
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+/*elementos que uso en varias partes y no solo en un coso especifico*/
+/*parrafo del titulo principal*/
+.parrafoPrincipal {
+  font-size: 1.2rem;
+  text-align: center;
+}
+
+/*pagina como ayudar*/
+.tituloAyuda {
+  display: flex;
+  margin-top: 3%;
+  justify-content: center;
+  color: aliceblue;
+}
+
+/*body toda la pagina*/
+.bodyPrincipal {
+  background-color: rgb(153, 239, 163);
+}
+
+@media screen and (min-width: 0px) and (max-width: 768px) {
+  .bodyPrincipal {
+    background-color: rgb(153, 239, 163);
+  }
+}
+/*imagen de fondo de los header*/
+.imagenInicio {
+  background-image: url(../assets/img/headerInicio.png);
+  background-size: cover;
+  position: sticky;
+  padding-left: 5%;
+  top: 0px;
+  z-index: 5;
+  height: 32vh;
+}
+
+.logo {
+  width: 80px;
+  margin-top: 5vh;
+}
+
+.listaDeNavegacion {
+  list-style: none;
+  margin-top: 10px;
+}
+
+.linkNav {
+  text-decoration: none;
+  color: rgb(94, 164, 97);
+  float: left;
+  font-size: 1.2rem;
+  line-height: 2rem;
+  margin: 0.5rem;
+  padding: 0.5rem;
+}
+
+.link::after {
+  content: "";
+  width: 100%;
+  height: 1px;
+  background-color: black;
+  border-radius: 4px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.25s ease;
+}
+
+.link:hover::after {
+  transform: scaleX(1);
+}
+
+/*.colorLink{
+    color: rgb(94, 164, 97);
+}*/
+@media screen and (min-width: 0px) and (max-width: 768px) {
+  .imagenInicio {
+    background-image: url(../assets/img/headerInicio.png);
+    background-size: cover;
+    position: sticky;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    -o-object-fit: cover;
+       object-fit: cover;
+    padding-left: 5%;
+    top: 0px;
+    z-index: 5;
+    height: 22vh;
+  }
+  .imagenInicio .linkNav {
+    text-decoration: none;
+    display: list-item;
+    font-size: 1.5vh;
+    line-height: 5px;
+  }
+}
+/*section del index*/
+.index .tituloPrincipal {
+  background-color: rgb(153, 239, 163);
+  width: 100%;
+  font-size: 2.2rem;
+}
+.index .sectionIndex {
+  background-color: rgb(153, 239, 163);
+}
+.index .sectionIndex .col-img, .index .sectionIndex .col-imgtres, .index .sectionIndex .col-imgdos {
+  background-position: center;
+  background-size: cover;
+  margin-bottom: 50px;
+  display: flex;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.index .sectionIndex .col-img .img, .index .sectionIndex .col-imgtres .img, .index .sectionIndex .col-imgdos .img {
+  display: flex;
+  width: 50vh;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.index .sectionIndex .col-imgdos {
+  background-size: auto;
+}
+.index .sectionIndex .col-imgdos .img {
+  display: flex;
+  width: 50vh;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.index .sectionIndex .col-imgtres {
+  background-size: auto;
+}
+.index .sectionIndex .col-imgtres .img {
+  display: flex;
+  width: 50vh;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.index .sectionIndex .parrafoSectionIndex {
+  font-size: 1.2rem;
+}
+.index .sectionIndex .textoNegrita {
+  color: rgb(66, 198, 73);
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/*aca utilize el mapa, en la parte del video*/
+/*como ayudar*/
+.comoAyudar .sectionGaleriaImg {
+  background-repeat: no-repeat;
+  margin: 3%;
+  display: flex;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.comoAyudar .sectionGaleriaImg .imgAcomodar {
+  display: inline-block;
+  padding: 0%;
+}
+.comoAyudar .sectionGaleriaImg .imgAcomodar .imgAjustando {
+  width: 100%;
+  height: 90%;
+  display: flex;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.comoAyudar .iconoImg {
+  padding-left: 50px;
+}
+.comoAyudar .parrafoIconos {
+  text-align: center;
+}
+.comoAyudar .video {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 25px;
+}
+
+/*Pagina alimentacion*/
+.alimentacion .recetas {
+  font-size: 5vh;
+  text-align: center;
+  color: rgb(26, 183, 86);
+}
+.alimentacion .contenedorCard {
+  width: 95%;
+  display: flex;
+  justify-content: space-between;
+  margin: 3%;
+}
+.alimentacion .contenedorCard .card {
+  width: 50%;
+  background-color: aliceblue;
+  box-shadow: 0 0 10px rgb(0, 0, 0);
+  border-radius: 10px;
+  border: 1px solid black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  justify-content: space-between;
+  align-items: center;
+}
+.alimentacion .contenedorCard .card img {
+  width: 90%;
+  height: 25%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  display: inline-flex;
+  margin: 5%;
+  padding: 5%;
+}
+.alimentacion .sombra {
+  text-shadow: 0 0 5px black;
+}
+.alimentacion .influencer {
+  display: flex;
+  margin-top: 3%;
+  margin-bottom: 3%;
+  justify-content: center;
+  color: rgb(6, 255, 93);
+  text-shadow: 0 0 10px rgb(0, 0, 0);
+  font-size: 5.5vh;
+}
+.alimentacion .influencer .marginInf {
+  margin: 3%;
+}
+.alimentacion .influencer .marginInf .linkInfluencer {
+  list-style: none;
+}
+.alimentacion .influencer .marginInf .linkInfluencer .linkInsta {
+  text-decoration: none;
+  margin-top: 3%;
+  color: black;
+}
+.alimentacion .parrafoInfluencer {
+  font-size: 3vh;
+  color: azure;
+  margin-left: 3%;
+}
+
+/*Pagina vegetarianismo*/
+.vegetarianismo .h2Titulo {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  width: 100%;
+  margin: 10px;
+  /* display: $contenedor-flex;
+   justify-content:$justify-content;
+   text-align:$texto-centrado;
+   width: 100%;
+   margin: 10px;*/
+}
+.vegetarianismo .cardTitulo {
+  display: flex;
+  margin-top: 3%;
+  justify-content: center;
+  color: rgb(50, 85, 51);
+}
+.vegetarianismo .cardSub {
+  display: flex;
+  margin-bottom: 3%;
+  justify-content: center;
+  color: rgb(255, 255, 255);
+}
+.vegetarianismo .cardAcomodo {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+/*preguntar a los tutores como corregir el carousel*/
+.carousel {
+  display: flex;
+  justify-content: center;
+  width: 80%;
+  height: 30%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+/*Pagina Nosotros*/
+.nosotros .tituloNosotros {
+  margin: 2%;
+  color: aliceblue;
+}
+.nosotros .subNosotros {
+  text-align: center;
+  margin-top: 3%;
+  margin-bottom: 3%;
+  color: rgb(65, 156, 90);
+  text-shadow: 0 0 2px rgb(86, 253, 94);
+}
+.nosotros .parrafoNosotros {
+  text-align: center;
+  color: rgb(10, 106, 74);
+}
+.nosotros .formulario {
+  background-color: rgb(30, 82, 30);
+  color: rgb(255, 255, 255);
+  border: none;
+}
+
+@media screen and (min-width: 0px) and (max-width: 768px) {
+  .col-img, .index .sectionIndex .col-imgdos, .index .sectionIndex .col-imgtres {
+    background-position: center;
+    background-size: cover;
+    margin-bottom: 50px;
+    display: flex;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .col-img .img, .index .sectionIndex .col-imgdos .img, .index .sectionIndex .col-imgtres .img {
+    display: flex;
+    width: 30vh;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .col-imgdos {
+    background-position: center;
+    background-size: auto;
+    margin-bottom: 50px;
+    display: flex;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .col-imgdos .img {
+    display: flex;
+    width: 30vh;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .col-imgtres {
+    background-position: center;
+    background-size: auto;
+    margin-bottom: 50px;
+    display: flex;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .col-imgtres .img {
+    display: flex;
+    width: 30vh;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  /*Seccion Como Ayudar*/
+  .sectionGaleriaImg {
+    background-repeat: no-repeat;
+    margin: 5%;
+    display: flex;
+    -o-object-fit: cover;
+       object-fit: cover;
+    align-items: center;
+  }
+  .sectionGaleriaImg .imgAcomodar {
+    display: inline-block;
+    padding: 0%;
+  }
+  .sectionGaleriaImg .imgAcomodar .imgAjustando {
+    width: 40vh;
+    height: 70%;
+    display: flex;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+}
+.pieDePagina {
+  background-color: rgb(113, 183, 120);
+  height: 20vh;
+}
+
+.parrafoFoot {
+  display: flex;
+  justify-content: center;
+}
+
+.contenedorRedes {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.contenedorRedes a {
+  color: rgb(34, 105, 52);
+  font-size: 2.5rem;
+  text-decoration: none;
+}
+
+@media screen and (min-width: 0px) and (max-width: 768px) {
+  /*footer*/
+  .pieDePagina {
+    background-color: rgb(113, 183, 120);
+    height: 12vh;
+  }
+}/*# sourceMappingURL=estilos.css.map */

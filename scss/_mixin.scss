@@ -1,0 +1,7 @@
+@mixin flexible ($justify, $centrado, $porciento, $margin-px){
+    display: flex;
+    justify-content:$justify;
+    text-align:$centrado;
+    width:$porciento;
+    margin: $margin-px;
+}

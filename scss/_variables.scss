@@ -1,0 +1,27 @@
+/*creacion de variables*/
+
+$color-verde-principal:  rgb(153, 239, 163);
+$color-alice:  aliceblue;
+
+$contenedor-flex: flex;
+
+$justify-content: center;
+
+$texto-centrado: center;
+
+$margin-porciento: 3%;
+
+$font-size-rem: 1.2rem;
+
+$contenedor-cov: cover;
+
+/*mapa, lo use en el video de la pagina Como Ayudar!*/
+$map-flex: (
+    flex:flex,
+    row:row,
+    column:column,
+    space-around:space-around,
+    space-between:space-between,
+    space-evenly:space-evenly,
+    center:center,
+)

@@ -1,0 +1,16 @@
+/*elementos que uso en varias partes y no solo en un coso especifico*/
+
+
+/*parrafo del titulo principal*/
+.parrafoPrincipal{
+    font-size: $font-size-rem;
+    text-align:$texto-centrado;
+}
+
+/*pagina como ayudar*/
+.tituloAyuda{
+ display: $contenedor-flex;
+ margin-top: $margin-porciento;
+ justify-content:$justify-content;
+ color: $color-alice;
+}
