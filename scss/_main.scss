@@ -7,36 +7,16 @@
 }
 .sectionIndex{
     background-color: $color-verde-principal;
-    .col-img{
+    .col-imgdos{
         background-position: center;
-        background-size: cover;
         margin-bottom: 50px;
         display: $contenedor-flex;
-        object-fit: $contenedor-cov;  
-        .img{
-            display:$contenedor-flex;
-            width: 50vh;
-            object-fit: $contenedor-cov;
-        }
-    }
-    .col-imgdos{
-        @extend .col-img;
+        object-fit: $contenedor-cov; 
         background-size: auto;
         .img{
             display:$contenedor-flex;
             width: 50vh;
             object-fit: $contenedor-cov;
-        }
-    }
-    
-    .col-imgtres{
-        @extend .col-img;
-        background-size: auto;
-       
-        .img{
-            display:$contenedor-flex;
-            width: 50vh;
-            object-fit:$contenedor-cov;
         }
     }
     .parrafoSectionIndex{
@@ -57,22 +37,28 @@
 /*aca utilize el mapa, en la parte del video*/
 /*como ayudar*/
 .comoAyudar{
-.sectionGaleriaImg{
-    background-repeat: no-repeat;
-     margin: 3%;
-    display: $contenedor-flex;
-    object-fit: $contenedor-cov; 
-    .imgAcomodar{
-        display: inline-block;
-        padding: 0%;
-        .imgAjustando{
-            width: 100% ;
-            height: 90%;
-            display:$contenedor-flex;
-            object-fit:$contenedor-cov;
+    .sectionGaleriaImg{
+        background-repeat: no-repeat;
+         margin: 3%;
+        display: $contenedor-flex;
+        object-fit: $contenedor-cov;
+        .imgAcomodar{
+            display: inline-block;
+            padding: 0%;
+            .imgAjustando{
+                width: 100% ;
+                height: 90%;
+                display:$contenedor-flex;
+                object-fit:$contenedor-cov;
+            }
         }
     }
+.subCA{
+    color: rgb(50, 85, 51);
+    margin-left: 20%;
+    margin-bottom: 2%;
 }
+
 .iconoImg{
     padding-left: 50px;
 }
@@ -93,69 +79,48 @@
     .recetas{
         font-size: 5vh;
         text-align:$texto-centrado;
-        color: rgb(26, 183, 86);
+        color: rgb(50, 85, 51);
+    } 
+    .cardH4{
+        color: rgb(50, 85, 51);
     }
-    .contenedorCard{
-        width:95%;
-        display: $contenedor-flex;
-        justify-content: space-between;
-        margin: $margin-porciento;
-        .card{
-            width: 50%;
-            background-color:$color-alice;
-            box-shadow: 0 0 10px rgb(0, 0, 0);
-            border-radius: 10px;
-            border: 1px solid black;
+    .subInf{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+        .influencer{
             display: $contenedor-flex;
-            flex-direction: column;
-            justify-content: $justify-content;
-            justify-content: space-between;
-            align-items: center;
-            img{
-                width: 90%;
-                height: 25%;
-                object-fit: $contenedor-cov;
-                display: inline-flex;
-                margin: 5%;
-                padding: 5%;
-            
-            }
-        }
-    }
-    .sombra{
-        text-shadow: 0 0 5px black;
-    }
-    .influencer{
-        display: $contenedor-flex;
-        margin-top: $margin-porciento;
-        margin-bottom: $margin-porciento;
-        justify-content:$justify-content;
-        color: rgb(6, 255, 93);
-        text-shadow: 0 0 10px rgb(0, 0, 0);
-        font-size: 5.5vh;
-        .marginInf{
-            margin:$margin-porciento;
+            margin-top: $margin-porciento;
+            margin-bottom: $margin-porciento;
+            justify-content:$justify-content;
+            color: rgb(66, 198, 73) ;
+            font-size: 5.5vh;
             .linkInfluencer{
                 list-style: none;
-                .linkInsta{
-                    text-decoration: none;
-                    margin-top:$margin-porciento;
-                    color: black;
-                }
-            }
+                text-decoration: none;
+                color: rgb(66, 198, 73);
         }
-    }
+        }
+    
+
     .parrafoInfluencer{
-        font-size: 3vh;
-        color: azure;
+         font-size: $font-size-rem;
+        font-style: italic;
+        display: $contenedor-flex;
+        justify-content: $justify-content;
         margin-left:$margin-porciento;
     }
-
 }
+
 
 
 /*Pagina vegetarianismo*/
 .vegetarianismo{
+    .subVeggie{
+        margin-left: 5%;
+        font-weight: bold
+    }
     .h2Titulo{
         @include flexible ($justify-content, $texto-centrado, 100%, 10px);
        /* display: $contenedor-flex;
@@ -163,6 +128,25 @@
         text-align:$texto-centrado;
         width: 100%;
         margin: 10px;*/
+    }
+    .galeriaVeg{
+        display: grid;
+        grid-template-rows: repeat(auto-fit, minmax(300px, 1fr));
+        margin: auto;
+        grid-gap: 10px;
+        overflow: hidden;
+    }
+    .galeriaVeg > img{
+        display: block;
+        position: relative;
+        box-shadow: 0 0 5px black;
+        overflow: hidden;
+    }
+    .galeriaVeg img{
+        width: 100%;
+        vertical-align: top;
+        height: 300px;
+        object-fit: cover;
     }
     .cardTitulo{
         display: $contenedor-flex;
@@ -176,24 +160,12 @@
         justify-content: $justify-content;
         color:rgb(255, 255, 255)
     }
-    .cardAcomodo{
-        display:$contenedor-flex;
-        flex-direction: row;
-        justify-content: space-between;
+    .cardH4{
+        color: rgb(50, 85, 51);
     }
 } 
 
 
-/*preguntar a los tutores como corregir el carousel*/
-
-.carousel{
-    display: flex;
-    justify-content: center;
-    width: 80%;
-    height: 30%;
-    object-fit: cover;
-
-}
 
 
 /*Pagina Nosotros*/
@@ -211,31 +183,31 @@
     }
     .parrafoNosotros{
         text-align: $texto-centrado;
-        color:   rgb(10, 106, 74);
+        color:   rgb(0, 0, 0);
         
     }
     .formulario{
         background-color: rgb(30, 82, 30);
         color: rgb(255, 255, 255);
         border: none;
+        margin-bottom: 1%;
     }
 }
+//pagina error
+.margin{
+    margin: auto;
+    padding: 5%;
+}
+/*.tituloError{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+
+        }*/
 
 @media screen and (min-width:0px) and (max-width:768px) {
-    
-    .col-img{
-        background-position: center;
-        background-size: cover;
-        margin-bottom: 50px;
-        display: flex;
-        object-fit: cover;  
-        .img{
-            display: flex;
-            width: 30vh;
-            object-fit: cover;
-     
-        }
-    }
+    /*inicio*/
     .col-imgdos{
         background-position: center;
         background-size: auto;
@@ -250,19 +222,6 @@
         }
     }
     
-    .col-imgtres{
-        background-position: center;
-        background-size: auto;
-        margin-bottom: 50px;
-        display: flex;
-        object-fit: cover; 
-        .img{
-            display: flex;
-            width: 30vh;
-            object-fit: cover;
-     
-        }
-    }
 
     /*Seccion Como Ayudar*/
     .sectionGaleriaImg{
@@ -283,6 +242,17 @@
         
             }
         }
-    }
     
+    
+    /*seccion alimentacion*/
+    //acomodo el texto de influencers
+    .alimentacion{
+        .parrafoInfluencer{
+            font-size: 2vh;
+            font-style: italic;
+            margin: auto;
+            padding: 3%;
+        }
+    }
+}
 }

@@ -4,40 +4,56 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="otras formas de dejar de consumir carne/producto animal, diferencias entre veganismo y vegetarianismo">
-    <meta name="keywords"  content="Tipos de vegetarianismo Diferencias">
-    <title>vegetarianismo</title>
+    <meta name="description" content="Otras formas de dejar de consumir carne/producto animal, diferencias entre veganismo y vegetarianismo">
+    <meta name="keywords"  content="Tipos de vegetarianismo, Diferencias">
+    <title>Vegetarianismo</title>
      <!--favicon-->
      <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
       <!--boostrap-->
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
        <!--estilos-->
        <link rel="stylesheet" href="../scss/estilos.css">
+       <!--animaciones-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
         <!--el script me ayudo a que me funcione los iconos de redes porque lo descargue y no me funciono-->
         <script src="https://kit.fontawesome.com/acaf011dda.js" crossorigin="anonymous"></script>
+        <!--link de aos-->
+        <link  href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
+<script reel="stylesheet" src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+    AOS.init();
+    </script>
 <body class="bodyPrincipal">
     <header class="imagenInicio">
         <div>
-            <img src="../assets/img/plantita logo.png"  alt="logo de plantita de vegano" class="logo">
+            <nav>
+                <ul >
+                    <li class="linkLogo">
+                        <a href= "../index.html">
+                            <img src="../assets/img/plantita logo.png"  alt="logo de plantita de vegano" class="logo ">
+                        </a>
+                    </li>
+                </ul>
         </div>
         <nav>
             <!--esto es una lista desordenada-->
             <ul class="listaDeNavegacion">
                 <li>
-                    <a class="linkNav  colorLink" href="../index.html">inicio</a>
+                    <a class=" linkNav  animated-line" href="../index.html">Inicio</a>
                 </li>
                 <li>
-                    <a class="linkNav  colorLink" href="./como ayudar.html">como ayudar?</a>
+                    <a class=" linkNav  animated-line" href="./comoayudar.html">Como ayudar?</a>
                 </li>
                 <li>
-                    <a class="linkNav  colorLink" href="./alimentacion.html">alimentacion</a>
+                    <a class=" linkNav  animated-line" href="./alimentacion.html">Alimentación</a>
                 </li>
                 <li>
-                    <a class="linkNav  colorLink" href="#">vegetarianismo</a>
+                    <a class=" linkNav  animated-line" href="#">Vegetarianismo</a>
                 </li>
                 <li>
-                    <a class="linkNav  colorLink" href="./nosotros.html">nosotros</a>
+                    <a class=" linkNav  animated-line" href="./nosotros.html">Nosotros</a>
                 </li>
             </ul>
         </nav>
@@ -45,80 +61,97 @@
     <main class="vegetarianismo">
         <!--explicar diferencias de vegano/vegetariano-->
         <section>
-            <h1 class="tituloAyuda">Veganismo vs vegetarianismo</h1>
-            <h2>Forma de vida o dieta?</h2>
-            <p>Las personas vegetarianas son menos estrictas con la dieta, ya que excluyen, principalmente la carne animal. Sin embargo, los veganos, eliminan de su dieta todos los productos cuyo origen sea animal, esto incluye los quesos, los huevos o los yogures.  
+            <h1 class="tituloAyuda">Veganismo vs Vegetarianismo</h1>
+            <h2 class="subVeggie cardH4">Forma de vida o dieta?</h2>
+            <p class="parrafoPrincipal divP">Las personas vegetarianas son menos estrictas con la dieta, ya que excluyen, principalmente la carne animal. Sin embargo, los veganos, eliminan de su dieta todos los productos cuyo origen sea animal, esto incluye los quesos, los huevos o los yogures.  
                 Es decir, los vegetarianos, aunque basan su dieta en verduras, legumbres, frutas o cereales, sí consumen productos que provienen de los animales. Se la puede llamar una dieta ya que no erradica todo consumo animal.
             
                 Se podría decir que el veganismo es un movimiento que va más allá de la comida. Se trata de una postura ética frente a la sociedad. Por ejemplo, no utilizan productos que hayan sido testados en animales (como el maquillaje, las cremas para el cuerpo o una prenda de vestir) ya que defienden que los animales tienen derecho a ser libres y que el ser humano no está por encima de ellos. El veganismos es una forma de vida que combate la crueldad animal</p>
         </section>
         <!--diferentes tipos de habitos-->
-        <section  id="carouselExampleFade" class="row carousel slide carousel-fade" data-bs-ride="carousel">
-            <h2 class="h2Titulo">Otro tipos de formas de comer, reduciendo el consumo de la carne</h2>
+        <section class="row m-1">
+                <!--galeria de imagenes uno al lado del otro-->
+                <div class="col-md-4 galeriaVeg ">
+                    <img src="../assets/img/apivegetarianismo.png" class="imgAjustando p-0"  alt="tipos de vegetarianismo fotos" width="405px">
+                </div>
+                <div class="col-md-4 galeriaVeg">
+                    <img src="../assets/img/ovolacteovegetariana.png" class="imgAjustando p-0" alt="tipos de vegetarianismo fotos" width="405px">
+                </div>
+                <div class="col-md-4 galeriaVeg ">
+                    <img src="../assets/img/ovovegetariano.png" class="imgAjustando p-0" alt="tipos de vegetarianismo fotos" width="405px">
+                </div>>
 
-        <div class="carousel-inner">
-            <div class="carousel-item active imgCarousel">
-                <img src="../assets/img/ovolacteovegetariana.png" class="d-flex justify-content-center aling-items-center w-50 carousel" alt="flyer tipo de vegetariano" width="50px">
-            </div>
-            <div class="carousel-item imgCarousel">
-                <img src="../assets/img/pescariano.png" class="d-flex justify-content-center aling-items-center  w-50 carousel" alt="flyer tipo de vegetariano" width="50px">
-            </div>
-            <div class="carousel-item imgCarousel">
-                <img src="../assets/img/apivegetarianismo.png" class="d-flex justify-content-center aling-items-center  w-50 carousel" alt="flyer tipo de vegetariano" width="50px">
-            </div>
-            <div class="carousel-item imgCarousel">
-                <img src="../assets/img/ovovegetariano.png" class="d-flex justify-content-center aling-items-center  w-50 carousel" alt="flyer tipo de vegetariano" width="50px">
-            </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
-              </button>
-              <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
-              </button>
-
-              <!--d-flex justify-content-center aling-items-center w-50-->
-            
-        </div>
         </section>
-        <section class="row">
+    
+        <section class="row m-1 d-flex justify-content-center justify-content-evenly aling-items-center ">
         <!--testimonios de la gente-->
             <h2 class="cardTitulo">Testimonios</h2>
-            <h3 class="cardSub">de personas que siguen estos estilos de vida..</h3>
-        <div class="card colum-md-3 cardAcomodo" style="width: 18rem;">
-                <img src="../assets/img/chica 1.png" class="card-img-top" alt="chica" width="300px">
-            <div class="card-body ">
-            <h4 class="card-title">Ovolacteovegetariana</h4>
-            <p class="card-text">Empeze mi dieta hace 4 años con ayuda de un profesional, he intentado a ser vegana pero por temas de salud no se me recomendaba. Aun asi me siento feliz de poder lograr un cambio. Lo recomiendo mucho si no te es facil dejar la leche u el queso pero si la carne.</p>
+            <h3 class="cardSub">De personas que siguen estos estilos de vida..</h3>
+        <div>
+            <div class="row g-0 bg-body text-dark m-3"> <!--btn btn-primary-->
+                <div class="col-md-4 card mb-3 m-3" style=" width: 15rem; ">
+                <img src="../assets/img/chica 1.png" class="card-img-top" alt="chica" width=""> 
+                </div>
+            <div class="col-md-8">
+                <div class="card-body ">
+                    <div class="text-section">
+                        <h4 class="cardH4 card-title fw-bold">Ovolacteovegetariana</h4>
+                        <p class="card-text text-center">Empeze mi dieta hace 4 años con ayuda de un profesional, he intentado a ser vegana pero por temas de salud no se me recomendaba. Aun asi me siento feliz de poder lograr un cambio. Lo recomiendo mucho si no te es fácil dejar la leche u el queso pero si la carne.</p>
+                    </div>
+                </div>
+            </div>
             </div>
         </div>
-        <div class="card colum-md-3 cardAcomodo" style="width: 18rem;">
-                <img src="../assets/img/chico 1.png"  class="card-img-top" alt="chico" width="300px">
-            <div class="card-body ">
-            <h4 class="card-title">Pescariano</h4>
-            <p class="card-text"> Recuerdo que cuando tenia 15 años visite con mi abuelo un matadero y desde alli no pude volver a comer carne en mi vida pero con los pescados no me pasa lo mismo, siempre he visto el proceso y yo creo que ellos no sufren.</p>
+        <div>
+            <div class="row g-0 bg-body text-dark m-3" >
+                <div class="col-md-4  card mb-3 m-3" style=" width: 15rem; " >
+                <img src="../assets/img/chico 1.png"  class="card-img-top" alt="chico" >
+                </div>
+            <div class="col-md-8">
+                <div class="card-body ">
+                    <div class="text-section">
+                        <h4 class="cardH4 card-title fw-bold">Pescariano</h4>
+                        <p class="card-text text-center"> Recuerdo que cuando tenia 15 años visite con mi abuelo un matadero y desde allí no pude volver a comer carne en mi vida pero con los pescados no me pasa lo mismo, siempre he visto el proceso y yo creo que ellos no sufren.</p>
+                    </div>
+                </div>
+            </div>
             </div>
         </div>
-        <div class="card colum-md-3 cardAcomodo" style="width: 18rem;">
-                <img src="../assets/img/chica 2.png" class="card-img-top" alt="chica sonriendo" width="300px">
-            <div class="card-body">
-            <h4 class="card-title">Apivegetariana</h4>
-            <p class="card-text">Lo admito he intentado ser vegetariana pero teno un gusto culposo por la miel, no la puedo dejar entonces decidi quedarme en este tipo de dieta. En el que puedo seguir consumiendo la miel sin ningun tipo de recrimininacion</p>
+        <div>
+            <div class="row g-0 bg-body text-dark m-3" >
+                <div class="col-md-4  card mb-3 m-3" style=" width: 15rem; ">
+                <img src="../assets/img/chica 2.png" class="card-img-top" alt="chica sonriendo">
+                </div>
+            <div class="col-md-8">
+                <div class="card-body">
+                    <div class="text-section">
+                        <h4 class="cardH4 card-title fw-bold">Apivegetariana</h4>
+                        <p class="card-text text-center">Lo admito he intentado ser vegetariana pero teno un gusto culposo por la miel, no la puedo dejar entonces decidí quedarme en este tipo de dieta. En el que puedo seguir consumiendo la miel sin ningun tipo de recrimininacion</p>
+                    </div>
+                </div>
+            </div>
             </div>
         </div>
-        <div class="card colum-md-3 cardAcomodo" style="width: 18rem;">
-                <img src="../assets/img/señor.png" class="card-img-top" alt="señor" width="300px">
-            <div class="card-body ">
-            <h4  class="card-title">Ovovegetariano</h4>
-            <p class="card-text">Siempre he intentado llevar una vida lejos de la crueldad animal pero por recomendacion de mi medico tuve que volver a consumir huevo, no es lo que yo quisiese pero mi mujer dice que es por mi salud y tiene razon.</p>
+        <div>
+            <div class="row g-0 bg-body text-dark m-3" >
+                <div class="col-md-4  card mb-3 m-3" style=" width: 15rem; ">
+                <img src="../assets/img/señor.png" class="card-img-top" alt="señor">
+                </div>
+            <div class="col-md-8">
+                <div class="card-body ">
+                    <div class="text-section">
+                        <h4  class="cardH4 card-title fw-bold">Ovovegetariano</h4>
+                        <p class="card-text text-center">Siempre he intentado llevar una vida lejos de la crueldad animal pero por recomendación de mi medico tuve que volver a consumir huevo, no es lo que yo quisiese pero mi mujer dice que es por mi salud y tiene razón.</p>
+                    </div>
+                </div>
+            </div>
             </div>
         </div>    
         </section>
     </main>
     <footer class="pieDePagina">
-        <p class="parrafoFoot">todos los derechos reservados 2023</p>
-        <div class="contenedorRedes">
+        <p class="parrafoFoot">Todos los derechos reservados 2023</p>
+        <div class="contenedorRedes  animate__animated animate__shakeY animate__slower animate__repeat-3">
             <!--puse mis redes sociales para que cumpla la funcion, es una pagina imaginativa y no sabia que poner-->
                 <a href="https://www.instagram.com/piliaayala/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
                 <a href="https://www.facebook.com/romina.ayala.7758" target="_blank"><i class="fa-brands fa-facebook"></i></a>
@@ -126,6 +159,6 @@
             </div>
     </footer>
      <!--siempre abajo del footer-->
-     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>  
+     <script src="https://cdn. jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFY1ZcLA8NI+NtUVFOsA7MsXsP1UyJoMp4YLEUNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script> 
 </body>
 </html>

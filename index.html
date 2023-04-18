@@ -4,8 +4,8 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="description" content="introduccion a la pagina, te mostramos algunas peticiones para que nos ayudes">
-        <meta name="keywords"  content="Peticiones Veganismo introduccion">
+        <meta name="description" content="Introducción a la página, te mostramos algunas peticiones para que nos ayudes">
+        <meta name="keywords"  content="Peticiones, Veganismo. Introducción">
         <title>Veganismo forma de vida</title>
         <!--favicon-->
         <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
@@ -14,33 +14,50 @@
          <!--estilos-->
         <link rel="stylesheet" href="./scss/estilos.css">
         <!--<link rel="stylesheet" href="./css/all.min.css">-->
+         <!--animaciones-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
         <!--el script me ayudo a que me funcione los iconos de redes porque lo descargue y no me funciono-->
-        <script src="https://kit.fontawesome.com/acaf011dda.js" crossorigin="anonymous"></script>
-    </head>
+        <script  src="https://kit.fontawesome.com/acaf011dda.js" crossorigin="anonymous"></script>
+           <!--link de aos-->
+           <link  href="https://unpkg.com/aos@next/dist/aos.css" />
+        </head>
+        <script reel="stylesheet" src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <script>
+            AOS.init();
+            </script>
     <body class="col-md-12 bodyPrincipal">
         <!--el atributo class puede ir en cualquier etiqueta-->
         <header class=" imagenInicio">
             <!--aca esta mi logo-->
             <div>
-                <img src="./assets/img/plantita logo.png"  alt="logo de plantita de vegano" class="logo">
+                <nav>
+                    <ul class="linkLogo">
+                        <li>
+                            <a href= "#">
+                                <img src="./assets/img/plantita logo.png"  alt="logo de plantita de vegano" class="logo ">
+                            </a>
+                        </li>
+                    </ul>
+                </nav>        
             </div>
             <nav>
                 <!--esto es una lista desordenada-->
                 <ul class=" listaDeNavegacion">
                     <li>
-                        <a class=" linkNav colorLink" href="#">inicio</a>
+                        <a class=" linkNav  animated-line" href="#">Inicio</a>
                     </li>
                     <li>
-                        <a class=" linkNav colorLink" href="./pages/comoayudar.html">como ayudar?</a>
+                        <a class=" linkNav animated-line " href="./pages/comoayudar.html">Como ayudar?</a>
                     </li>
                     <li>
-                        <a class="linkNav colorLink" href="./pages/alimentacion.html">alimentacion</a>
+                        <a class="linkNav animated-line " href="./pages/alimentacion.html">Alimentación</a>
                     </li>
                     <li>
-                        <a class="linkNav colorLink" href="./pages/vegetarianismo.html">vegetarianismo</a>
+                        <a class="linkNav animated-line" href="./pages/vegetarianismo.html">Vegetarianismo</a>
                     </li>
                     <li>
-                        <a class=" linkNav colorLink" href="./pages/nosotros.html">nosotros</a>
+                        <a class=" linkNav animated-line" href="./pages/nosotros.html">Nosotros</a>
                     </li>
                 </ul>
             </nav>
@@ -50,14 +67,14 @@
         <main class="container index">
                  <!--el h2 es el subtitulo y el h1 el titulo-->
             <section class=" tituloPrincipal">
-                <h1 class="tituloAyuda" >conoce mas sobre el mundo vegano</h1>
+                <h1 class="tituloAyuda" >Conoce mas sobre el mundo vegano</h1>
                 <!--para multilinea usar alt+z
                 para grabar usar ctrl+s-->
-                <p class=" parrafoPrincipal">Somos una organizacion que busca concientizar que es el veganismo, dejando fuera todo tipo de arquetipos que se han impuesto.</p>
+                <p  class="parrafoPrincipal divP " >Somos una organización que busca concientizar que es el veganismo, dejando fuera todo tipo de arquetipos que se han impuesto.</p>
             </section>
             <section class="row m-1 sectionIndex ">
                 <!--aca van ir a enlaces de otras paginas para informarse mas o firmar peticiones-->
-                <div class="col-md-5 col-img">
+                <div class="col-md-5 col-imgdos">
                     <img src="./assets/img/vacasdelcampo.png" alt="vacas del campo" class="img">
                 </div>
                 <div class="col-md-7">
@@ -89,12 +106,11 @@
             </section>
             <section class="row m-1 sectionIndex">
                   <!--aca van ir a enlaces de otras paginas para informarse mas o firmar peticiones-->
-                <div class="col-md-5 col-imgtres">
+                <div class="col-md-5 col-imgdos">
                     <img src="./assets/img/protestas.png" alt="protestas" class="img">
                 </div>
                 <div class="col-md-7 ">
-                <p class="parrafoSectionIndex">A diferencia de otros movimientos de liberación,en éste los individuos oprimidos no pueden amotinarse u organizar manifestaciones…son esclavos desde el momento en el que nacen hasta el día mueren.Miles de animales mueren cada segundo,es necesario y urgente que alcemos la voz por ellos,que contribuyamos a que más gente cuestione el especismo.</p>
-                </div>
+                <p class="parrafoSectionIndex"> Los individuos oprimidos no pueden amotinarse u organizar manifestaciones… Son esclavos desde el momento en el que nacen hasta el día mueren. Miles de animales mueren cada segundo,es necesario y urgente que alcemos la voz por ellos,que contribuyamos a que más gente cuestione el especismo.</p>
             <nav>
                 <!--no se porque no se acomoda abajo del parrafo-->
                 <ul class="col-md-12 listaDeNavegacion">
@@ -103,20 +119,22 @@
                     </li>
                 </ul>
             </nav>
+                </div>
         </main>
    
         <footer class="pieDePagina">
-            <p class="parrafoFoot">todos los derechos reservados 2023</p>
+            <p class="parrafoFoot">Todos los derechos reservados 2023</p>
         <!--fontawesome iconos-->
-        <div class="contenedorRedes">
+        <div class="contenedorRedes animate__animated animate__shakeY animate__slower animate__repeat-3">
         <!--puse mis redes sociales para que cumpla la funcion, es una pagina imaginativa y no sabia que poner-->
-            <a href="https://www.instagram.com/piliaayala/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://www.instagram.com/piliaayala/" target="_blank"><i class=" fa-brands fa-instagram"></i></a>
             <a href="https://www.facebook.com/romina.ayala.7758" target="_blank"><i class="fa-brands fa-facebook"></i></a>
             <a href="https://twitter.com/piliaayala03" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+
         </div>
         </footer>
         <!--linkearlo en todas las paginas igual que boostrap-->
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+        <script src="https://cdn. jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFY1ZcLA8NI+NtUVFOsA7MsXsP1UyJoMp4YLEUNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 
 
     </body>
