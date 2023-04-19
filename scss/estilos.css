@@ -348,7 +348,7 @@ propiedad de valor;
     -o-object-fit: cover;
        object-fit: cover;
   }
-  .col-imgdos .img {
+  .img {
     display: flex;
     width: 30vh;
     -o-object-fit: cover;
